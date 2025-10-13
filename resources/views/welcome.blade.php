@@ -15,7 +15,7 @@
     <body>
         <div>
             <h1 class="text-primary">Welcome to the Laravel 122</h1>
-            <a href="{{ route('about') }}" class="btn btn-primary mt-3">Zur About-Seite</a>
+            
         </div>
     </body>
 </html>

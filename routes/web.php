@@ -8,9 +8,11 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
-Route::get('about', function () {
-    return view('about');
-})->name('about');
+Route::view('/about', 'about');
+
+Route::get('/product/{category?}', function (string $category = null) {
+    return "Product = $category";
+});
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
